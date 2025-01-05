@@ -1,5 +1,5 @@
 # Ignore .vscode directory
-.vscode/
+/.vscode
 
 # Ignore .csv files
 *.csv
