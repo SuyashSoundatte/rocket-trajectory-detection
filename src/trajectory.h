@@ -6,21 +6,23 @@
 #include <vector>
 using namespace std;
 
-class trajectory{
-
+class trajectory {
     public:
-        //constructor
+        // Constructor
         trajectory();
 
-        //methods
+        // Methods
         float evaluateSigmoid(float x);
         void calculateTrajectory();
+        void calculateDragTrajectory();  // New method to calculate drag trajectory
         bool checkFeasibleTrajectory();
         void resetTrajectory();
 
-        //variables
+        // Variables
         vector<float> xvalues;
         vector<float> yvalues;
+        vector<float> drag_xvalues;   // Store drag trajectory points
+        vector<float> drag_yvalues;   // Store drag trajectory points
         float height;
         float downrange;
         float minDistance;
@@ -38,4 +40,4 @@ class trajectory{
         int nPoints;
 };
 
-#endif 
+#endif
