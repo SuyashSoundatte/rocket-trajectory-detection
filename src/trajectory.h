@@ -14,15 +14,15 @@ class trajectory {
         // Methods
         float evaluateSigmoid(float x);
         void calculateTrajectory();
-        void calculateDragTrajectory();  // New method to calculate drag trajectory
+        void calculateDragTrajectory(); 
         bool checkFeasibleTrajectory();
         void resetTrajectory();
 
         // Variables
         vector<float> xvalues;
         vector<float> yvalues;
-        vector<float> drag_xvalues;   // Store drag trajectory points
-        vector<float> drag_yvalues;   // Store drag trajectory points
+        vector<float> drag_xvalues;  
+        vector<float> drag_yvalues;   
         float height;
         float downrange;
         float minDistance;
