@@ -6,3 +6,7 @@
 # Ignore .csv files
 *.csv
 *.jpeg
+*/.venv
+*/.venv/
+*/.venv/*
+.venv/
